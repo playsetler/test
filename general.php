@@ -91,8 +91,8 @@ print_r($result_array);
 echo '</pre>';
 
 /* 5 задание */
-
-$query = 'SELECT DISTINCT id, name FROM goods WHERE goods.id = (SELECT DISTINCT goods_id, COUNT(DISTINCT tag_id) AS num FROM goods_tags WHERE num = (SELECT COUNT(id) FROM tags)) ORDER BY goods.id'; // не решено
+// не решено
+$query = 'SELECT DISTINCT id, name FROM goods WHERE goods.id = (SELECT DISTINCT goods_id, COUNT(DISTINCT tag_id) AS num FROM goods_tags WHERE num = (SELECT COUNT(id) FROM tags)) ORDER BY goods.id'; 
 
 /* 6 задание */
 
