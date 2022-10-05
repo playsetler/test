@@ -96,6 +96,6 @@ $query = 'SELECT DISTINCT id, name FROM goods WHERE goods.id = (SELECT DISTINCT 
 
 /* 6 задание */
 
-$query = 'SELECT department_id FROM evaluations WHERE gender = true AND value > 5';
+$query = 'SELECT DISTINCT department_id FROM evaluations WHERE gender = true AND value > 5';
 
 ?>
